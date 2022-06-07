@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import './App.css';
 import TodoList, {TaskType} from './TodoList/TodoList';
 import {v1} from 'uuid';
-// import structuredClone from 'core-js';
 
 export type FilterValuesType = 'all' | 'active' | 'completed';
 
@@ -33,17 +32,6 @@ function App() {
     const changeTodoListFilter = (filter: FilterValuesType) => {
         setFilter(filter);
     }
-    // const doDeepCopy = (arr: Array<Array<TaskType>>) => {
-    //   const newArr: Array<Array<TaskType>> = arr.map(t => {
-    //       t.map(t => {
-    //           t = {...t};
-    //           return t;
-    //       });
-    //       return t;
-    //   });
-    //     console.log(newArr);
-    //     return newArr;
-    // }
     const setNewStateArray = () => {
         let tempCheck = structuredClone(state);
         tempCheck.push(tasks);
@@ -54,7 +42,6 @@ function App() {
             setTasks(state[state.length - 1]);
             state.pop();
             setState(state);
-
         }
     }
     const setCheck = (id: string) => {
