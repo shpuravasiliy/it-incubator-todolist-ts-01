@@ -52,9 +52,8 @@ function App() {
     const returnLastState = () => {
         if (state.length > 1) {
             setTasks(state[state.length - 1]);
-            let tempCheck = structuredClone(state);
-            tempCheck.pop();
-            setState(tempCheck);
+            state.pop();
+            setState(state);
 
         }
     }
