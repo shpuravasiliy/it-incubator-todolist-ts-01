@@ -44,13 +44,16 @@ function App() {
             setState(state);
         }
     }
-    const setCheck = (id: string) => {
-        const setCheckTasks = tasks.map((t) => {
-            if (t.id === id) t.isDone = !t.isDone;
-            return t;
-        });
+    const changeStatus = (id: string, newStatus: boolean) => {
+        // const task = tasks.find(t => t.id === id);
+        // if (task) task.isDone = newStatus;
+        // const setCheckTasks = tasks.map((t) => {
+        //     if (t.id === id) t.isDone = !t.isDone;
+        //     return t;
+        // });
         setNewStateArray();
-        setTasks(setCheckTasks);
+        setTasks(tasks.map(t => t.id === id ? {...t, isDone: newStatus} : t))
+        // setTasks([...tasks]);
     }
 
     let tasksForRender = tasks;
@@ -66,11 +69,12 @@ function App() {
             <TodoList
                 title={'What to do'}
                 tasks={tasksForRender}
+                filter={filter}
                 removeTask={removeTask}
                 onClickHandler={changeTodoListFilter}
                 addTask={addTask}
                 setLastState={returnLastState}
-                setCheck={setCheck}
+                changeTaskStatus={changeStatus}
             />
         </div>
     );

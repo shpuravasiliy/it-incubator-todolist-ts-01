@@ -1,0 +1,49 @@
+.todolist {
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5%;
+    /*opacity: 0.75;*/
+}
+
+/*.todolist:hover {*/
+/*    border: 2px solid black;*/
+/*    opacity: 1;*/
+/*}*/
+
+.isDone {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.filterButton {
+    margin: 5px;
+}
+
+.activeFilterButton {
+    background-color: burlywood;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: darkgrey;
+    border-radius: 5px;
+}
+
+.errorInput {
+    border-color: red;
+    color: red;
+    outline: none;
+}
+
+.errorText {
+    color: red;
+    font-size: 12px;
+}
+
+.titleText {
+    margin-top: 0;
+    text-align: center;
+}
+
