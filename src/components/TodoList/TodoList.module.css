@@ -1,0 +1,74 @@
+.todolist {
+    margin: 50% auto;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 0;
+    padding: 1%;
+}
+
+/*.todolist:hover {*/
+/*    border: 2px solid black;*/
+/*    opacity: 1;*/
+/*}*/
+
+.isDone {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.liSpan {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.liSpan > button {
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.liSpan > span {
+    width: 120px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    padding-inline-start: 20px;
+}
+input[placeholder] {
+    width: 100px;
+}
+.filterButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*.activeFilterButton {*/
+/*    background-color: burlywood;*/
+/*    border: 2px solid black;*/
+/*    border-radius: 5px;*/
+/*}*/
+
+/*button:hover {*/
+/*    background-color: darkgrey;*/
+/*    border-radius: 5px;*/
+/*}*/
+
+.errorInput {
+    border-color: red;
+    color: red;
+    outline: none;
+}
+
+.errorText {
+    color: red;
+    font-size: 12px;
+}
+
+.titleText {
+    margin-top: 0;
+    text-align: center;
+}
+

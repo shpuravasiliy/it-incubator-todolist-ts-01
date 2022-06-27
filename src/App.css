@@ -1,9 +1,4 @@
 .App {
-  padding: 30px;
   display: flex;
+  justify-content: space-between;
 }
-
-.App > div {
-  margin-right: 50px;
-}
-

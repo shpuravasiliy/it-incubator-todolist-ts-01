@@ -1,0 +1,24 @@
+.btn {
+    background-color: gainsboro;
+    border: none;
+    border-radius: 0;
+    padding: 3%;
+    /*margin: 5px;*/
+}
+
+.btn.btnRemove {
+    background-color: indianred;
+}
+
+.isActive {
+    border: 1px solid black;
+    /*border-radius: 5px;*/
+}
+
+button:hover {
+    background-color: darkgrey;
+}
+
+button:focus {
+    /*border: 1px solid black;*/
+}
