@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {TodolistsType} from '../../App';
 import {Button} from '../Button/Button';
 import style from './ListOfTodolists.module.css'
