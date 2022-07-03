@@ -8,7 +8,7 @@ type ButtonPropsType = DefaultButtonPropsType & {
 }
 
 export const Button: React.FC<ButtonPropsType> = ({isActive, removeBtn, className, ...restProps}) => {
-    const finalClassName = `${isActive ? style.isActive : ''} ${removeBtn ? style.btnRemove : ''} ${style.btn}`;
+    const finalClassName = `${isActive ? style.isActive : ''} ${removeBtn ? style.btnRemove : ''} ${style.stdButton}`;
     return (
         <>
             <button className={finalClassName} {...restProps}></button>

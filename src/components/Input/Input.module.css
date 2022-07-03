@@ -1,0 +1,24 @@
+.stdInput {
+    border: 1px solid darkgray;
+    box-shadow: 0 0 3px darkgray;
+    padding: 3%;
+    width: 100%;
+    height: 1em;
+}
+
+.stdInput:focus {
+    outline: black 1px solid;
+}
+
+.errorInput {
+    color: red;
+    font-size: 12px;
+}
+
+.errorBorder:focus {
+    outline: red 1px solid;
+}
+
+.errorBorder {
+    box-shadow: 0 0 3px red;
+}

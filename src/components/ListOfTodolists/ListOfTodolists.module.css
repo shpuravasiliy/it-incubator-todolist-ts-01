@@ -1,0 +1,16 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+table {
+    margin: 10px auto;
+    width: 100%;
+}
+
+.text {
+    margin: 10px auto;
+    text-align: center;
+}

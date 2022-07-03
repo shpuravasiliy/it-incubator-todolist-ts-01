@@ -1,0 +1,12 @@
+.main {
+    height: auto;
+    /*margin: 1%;*/
+    padding: 1%;
+    background-color: aliceblue;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.main h3 {
+    margin-top: 0;
+}

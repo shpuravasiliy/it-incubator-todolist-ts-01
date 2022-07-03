@@ -1,15 +1,17 @@
 .todolist {
-    margin: 50% auto;
+    margin: 20px;
+    padding: 10px;
     background-color: aliceblue;
     border: 1px solid black;
     border-radius: 0;
-    padding: 1%;
+    width: 200px;
+    height: auto;
+    opacity: 0.75;
 }
 
-/*.todolist:hover {*/
-/*    border: 2px solid black;*/
-/*    opacity: 1;*/
-/*}*/
+.todolist:hover {
+    opacity: 1;
+}
 
 .isDone {
     text-decoration: line-through;
@@ -18,7 +20,7 @@
 
 .liSpan {
     display: flex;
-    align-items: center;
+    /*align-content: center;*/
     padding: 0;
     justify-content: space-between;
 }
@@ -28,18 +30,43 @@
     justify-content: flex-end;
 }
 
+
 .liSpan > span {
-    width: 120px;
+    width: 100%;
+    margin: auto 15px;
+    overflow-wrap: break-word;
+    overflow: auto;
+    scrollbar-arrow-color: lightpink;
     display: flex;
     flex-wrap: wrap;
+    text-align: start;
 }
 
 ul {
     padding-inline-start: 20px;
+    list-style-type: none;
+    padding: 0;
 }
+
+/*span > input {*/
+/*    margin-right: 15px;*/
+/*}*/
+
+.inputBlock {
+    display: flex;
+    width: 100%;
+}
+
+.inputBlock input {
+    padding: 3%;
+    width: inherit;
+}
+
 input[placeholder] {
-    width: 100px;
+    /*width: 100px;*/
+    /*display: inline-block;*/
 }
+
 .filterButtons {
     display: flex;
     justify-content: space-between;
